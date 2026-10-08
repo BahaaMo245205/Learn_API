@@ -1,0 +1,37 @@
+[project]
+name = "learn-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiomysql>=0.3.2",
+    "aiosqlite>=0.22.1",
+    "alembic>=1.20.0",
+    "apscheduler>=3.11.3",
+    "bcrypt>=5.0.0",
+    "celery>=5.6.3",
+    "fastapi-mail>=1.6.8",
+    "fastapi[standard]>=0.141.1",
+    "gunicorn>=26.2.0",
+    "httpx>=0.28.1",
+    "imagekitio[aiohttp]>=5.10.0",
+    "moto>=5.2.3",
+    "passlib[bcrypt]>=1.7.4",
+    "pillow>=12.3.0",
+    "pydantic[email]>=2.13.5",
+    "pymysql>=1.2.3",
+    "pysqlite3>=0.6.0",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "python-dotenv>=1.2.3",
+    "python-jose[cryptography]>=3.5.0",
+    "python-multipart>=0.0.32",
+    "redis>=8.1.0",
+    "sentry-sdk[fastapi]>=2.70.0",
+    "slowapi>=0.1.10",
+    "sqlalchemy>=2.1.0",
+    "stripe>=15.6.1",
+    "uvicorn[standard]>=0.53.0",
+    "zxcvbn-python>=4.4.24",
+]
