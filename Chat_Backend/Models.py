@@ -1,11 +1,13 @@
-from pydantic import  BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr
 from datetime import datetime
+
 
 class Register(BaseModel):
     username: str
     email: EmailStr
     password: str
-    confirm_password : str
+    confirm_password: str
+
 
 class TokenResponse(BaseModel):
     access_token: str
@@ -13,17 +15,27 @@ class TokenResponse(BaseModel):
     user_id: str
     email: str
 
+
 class Login(BaseModel):
     email: EmailStr
     password: str
 
 
+class ActiveUser(BaseModel):
+    UserId: str
+    is_active: bool
+    
+    
+# class CreateConversationRequest (BaseModel):
+    
+
+
 class MessageCreate(BaseModel):
     content: str
+
 
 class MessageResponse(BaseModel):
     id: int
     sender: str
     content: str
     created_at: datetime
-
