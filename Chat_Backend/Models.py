@@ -13,7 +13,7 @@ class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
     user_id: str
-    email: str
+    email: EmailStr
 
 
 class Login(BaseModel):
@@ -24,10 +24,12 @@ class Login(BaseModel):
 class ActiveUser(BaseModel):
     UserId: str
     is_active: bool
-    
-    
-# class CreateConversationRequest (BaseModel):
-    
+
+
+class CreateConversationRequest(BaseModel):
+    name: str = None
+    is_group: bool = False
+    recipient_id: str = None
 
 
 class MessageCreate(BaseModel):

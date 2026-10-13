@@ -14,6 +14,7 @@ passlib[bcrypt]
 pillow
 pydantic[email]
 pymysql
+pysqlite3
 pytest
 pytest_asyncio
 python-dotenv
@@ -23,7 +24,7 @@ redis
 sentry-sdk[fastapi]
 slowapi
 SQLAlchemy
-pysqlite3
+sqlalchemy[asyncio]
 stripe
 uvicorn[standard]
 zxcvbn-python
