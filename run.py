@@ -1,4 +1,4 @@
 import uvicorn
 
 if __name__ == "__main__":
-    uvicorn.run('Chat_Backend.app:app',reload=True)
+    uvicorn.run('Rate_Limiter.app:app',reload=True)

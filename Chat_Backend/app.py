@@ -457,7 +457,7 @@ async def websocket_endpoint(
                             active_connections[conversation_id].remove(connection)
 
         except WebSocketDisconnect:
-            print(f"❌ User {user_id} disconnected from conversation {conversation_id}")
+            ...
 
     finally:
         if conversation_id in active_connections:
